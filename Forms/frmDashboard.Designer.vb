@@ -30,6 +30,11 @@ Partial Class frmDashboard
         btnAssignments = New Button()
         btnMySchedule = New Button()
         btnLogout = New Button()
+        StatusStrip1 = New StatusStrip()
+        lblUserStatus = New ToolStripStatusLabel()
+        lblRoleStatus = New ToolStripStatusLabel()
+        lblDateStatus = New ToolStripStatusLabel()
+        StatusStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' lblWelcome
@@ -99,18 +104,47 @@ Partial Class frmDashboard
         ' 
         ' btnLogout
         ' 
-        btnLogout.Location = New Point(174, 400)
+        btnLogout.Location = New Point(411, 197)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(75, 23)
         btnLogout.TabIndex = 7
         btnLogout.Text = "Logout"
         btnLogout.UseVisualStyleBackColor = True
         ' 
+        ' StatusStrip1
+        ' 
+        StatusStrip1.Items.AddRange(New ToolStripItem() {lblUserStatus, lblRoleStatus, lblDateStatus})
+        StatusStrip1.Location = New Point(0, 389)
+        StatusStrip1.Name = "StatusStrip1"
+        StatusStrip1.Size = New Size(584, 22)
+        StatusStrip1.TabIndex = 8
+        StatusStrip1.Text = "StatusStrip1"
+        ' 
+        ' lblUserStatus
+        ' 
+        lblUserStatus.Name = "lblUserStatus"
+        lblUserStatus.Size = New Size(80, 17)
+        lblUserStatus.Text = "Logged in as: "
+        ' 
+        ' lblRoleStatus
+        ' 
+        lblRoleStatus.Name = "lblRoleStatus"
+        lblRoleStatus.Size = New Size(33, 17)
+        lblRoleStatus.Text = "Role:"
+        ' 
+        ' lblDateStatus
+        ' 
+        lblDateStatus.Name = "lblDateStatus"
+        lblDateStatus.Size = New Size(34, 17)
+        lblDateStatus.Text = "Date:"
+        ' 
         ' frmDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(984, 611)
+        ClientSize = New Size(584, 411)
+        ControlBox = False
+        Controls.Add(StatusStrip1)
         Controls.Add(btnLogout)
         Controls.Add(btnMySchedule)
         Controls.Add(btnAssignments)
@@ -124,6 +158,8 @@ Partial Class frmDashboard
         Name = "frmDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Kids Planner - Dashboard"
+        StatusStrip1.ResumeLayout(False)
+        StatusStrip1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -136,4 +172,8 @@ Partial Class frmDashboard
     Friend WithEvents btnAssignments As Button
     Friend WithEvents btnMySchedule As Button
     Friend WithEvents btnLogout As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents lblUserStatus As ToolStripStatusLabel
+    Friend WithEvents lblRoleStatus As ToolStripStatusLabel
+    Friend WithEvents lblDateStatus As ToolStripStatusLabel
 End Class

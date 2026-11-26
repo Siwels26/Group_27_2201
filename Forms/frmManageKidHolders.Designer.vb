@@ -36,6 +36,7 @@ Partial Class frmManageKidHolders
         btnClear = New Button()
         dgvKidHolders = New DataGridView()
         btnDelete = New Button()
+        btnClose = New Button()
         CType(dgvKidHolders, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -166,11 +167,22 @@ Partial Class frmManageKidHolders
         btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = True
         ' 
+        ' btnClose
+        ' 
+        btnClose.Location = New Point(500, 263)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(75, 23)
+        btnClose.TabIndex = 14
+        btnClose.Text = "Close"
+        btnClose.UseVisualStyleBackColor = True
+        ' 
         ' frmManageKidHolders
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(734, 611)
+        ControlBox = False
+        Controls.Add(btnClose)
         Controls.Add(btnDelete)
         Controls.Add(dgvKidHolders)
         Controls.Add(btnClear)
@@ -207,4 +219,5 @@ Partial Class frmManageKidHolders
     Friend WithEvents btnClear As Button
     Friend WithEvents dgvKidHolders As DataGridView
     Friend WithEvents btnDelete As Button
+    Friend WithEvents btnClose As Button
 End Class
