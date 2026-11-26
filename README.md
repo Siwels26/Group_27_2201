@@ -6,7 +6,7 @@
 
 | Name | Reg No | GitHub | Main Work Done |
 |------|--------|--------|----------------|
-| [Lewis Njuguna] | [C025-01-0798/2025] | [Siwels26] | Splash Screen, Database Connection, Parent Registration, Login Authentication, User Session, Dashboard, Kid Holder Management |
+| [Lewis Njuguna] | [C025-01-0798/2025] | [Siwels26] | User management and login |
 | [Silvia Wanjiru] | [C025-01-0799/2025] | [Silvia-Kinyua] | Children Management |
 | [Salome Ndirangu] | [C025-01-0789/2025] | [GitHub Username] | Weekly Schedule Management |
 
