@@ -46,16 +46,16 @@ The Kids Weekly Schedule Planner is a desktop application designed to help paren
 3. Clone the project repository from GitHub.
 4. Import the database script with the name `KidsScheduleDB` into MySQL.
 5. The application uses a .env file to store database connection settings.
-   Open the project folder containing KidsWeeklySchedulePlanner.vbproj.
-   Create a text file named .env in that cloned folder.
-   Add the following configuration as it is using Notepad/ Notepad++:
-       DB_SERVER=localhost
-       DB_PORT=3306
-       DB_NAME=KidsScheduleDB
-       DB_USER=root
-       DB_PASSWORD=your_mysql_password
-   Replace your_mysql_password with your local MySQL password.
-   Save the file.
+   - Open the project folder containing KidsWeeklySchedulePlanner.vbproj.
+   - Create a text file named .env in that cloned folder.
+   - Add the following configuration as it is using Notepad/ Notepad++:
+       - DB_SERVER=localhost
+       - DB_PORT=3306
+       - DB_NAME=KidsScheduleDB
+       - DB_USER=root
+       - DB_PASSWORD=your_mysql_password
+   - Replace your_mysql_password with your local MySQL password.
+   - Save the file.
 6. Open `KidsWeeklySchedulePlanner.sln` in Visual Studio.
 7. Restore the required NuGet packages if necessary.
 8. Build the solution.
