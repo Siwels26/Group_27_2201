@@ -37,7 +37,7 @@ Partial Class frmLogin
         ' 
         lblTitle.AutoSize = True
         lblTitle.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle.Location = New Point(60, 9)
+        lblTitle.Location = New Point(99, 9)
         lblTitle.Name = "lblTitle"
         lblTitle.Size = New Size(356, 32)
         lblTitle.TabIndex = 0
@@ -47,7 +47,7 @@ Partial Class frmLogin
         ' 
         lblWelcome.AutoSize = True
         lblWelcome.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblWelcome.Location = New Point(157, 56)
+        lblWelcome.Location = New Point(201, 57)
         lblWelcome.Name = "lblWelcome"
         lblWelcome.Size = New Size(115, 21)
         lblWelcome.TabIndex = 1
@@ -56,7 +56,7 @@ Partial Class frmLogin
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
-        lblUsername.Location = New Point(60, 131)
+        lblUsername.Location = New Point(99, 131)
         lblUsername.Name = "lblUsername"
         lblUsername.Size = New Size(60, 15)
         lblUsername.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class frmLogin
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(157, 123)
+        txtUsername.Location = New Point(216, 123)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(100, 23)
         txtUsername.TabIndex = 3
@@ -72,7 +72,7 @@ Partial Class frmLogin
         ' lblPassword
         ' 
         lblPassword.AutoSize = True
-        lblPassword.Location = New Point(60, 197)
+        lblPassword.Location = New Point(99, 197)
         lblPassword.Name = "lblPassword"
         lblPassword.Size = New Size(57, 15)
         lblPassword.TabIndex = 4
@@ -80,7 +80,7 @@ Partial Class frmLogin
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(157, 189)
+        txtPassword.Location = New Point(216, 189)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(100, 23)
         txtPassword.TabIndex = 5
@@ -88,7 +88,7 @@ Partial Class frmLogin
         ' 
         ' btnLogin
         ' 
-        btnLogin.Location = New Point(99, 275)
+        btnLogin.Location = New Point(241, 281)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(75, 23)
         btnLogin.TabIndex = 6
@@ -106,7 +106,7 @@ Partial Class frmLogin
         ' 
         ' btnExit
         ' 
-        btnExit.Location = New Point(466, 344)
+        btnExit.Location = New Point(380, 344)
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(75, 23)
         btnExit.TabIndex = 8
@@ -119,6 +119,7 @@ Partial Class frmLogin
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(584, 411)
+        ControlBox = False
         Controls.Add(btnExit)
         Controls.Add(btnRegister)
         Controls.Add(btnLogin)
